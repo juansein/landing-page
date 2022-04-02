@@ -18,10 +18,12 @@
 <body>
     <header>
         <nav id="navbar" class="btn__shadow">
-            <div class="navbar__menu d-flex justify-content-between">
-                <div class="navbar--left">
-                    <a href="#" class="p-0"><img class="logo" src="img/CoffeeShop.svg" alt=""></a>
-                    <div class="navbar__links">
+            <div class="w-80 navbar__menu">
+                <div class="col-7 col-lg-6 navbar--left">
+                    <div class="col-12 col-lg-5">
+                        <a href="#" class="p-0"><img class="logo" src="img/CoffeeShop.svg" alt=""></a>
+                    </div>
+                    <div class="col-12 col-lg-7 navbar__links">
                         <a href="#">Home</a>
                         <a href="#products">Products</a>
                         <a href="#about">About us</a>
@@ -37,18 +39,20 @@
             <button class="carousel__button next" data-carousel-button="next">&gt;</button>
             <ul data-slides>
                 <li class="p-0 slide" data-active>
-                    <div>
+                    <div class="col-12 col-lg-6">
                         <p class="hero__subtitle">Classic tastes best</p>
                         <h1 class="hero__title">Making the best coffee in the market since 1975</h1>
                         <a href="#products" class="btn btn-lg btn__shadow">Our products</a>
                     </div>
-                    <img class="hero__img" src="img/CUPS.svg" alt="">
+                    <div class="col-lg-5">
+                        <img class="img-fluid" src="img/CUPS.svg" alt="">
+                    </div>
                 </li>
                 <li class="p-0 slide">
-                    <div class="col-7 p-0">
+                    <div class="col-12 col-lg-7 p-0">
                         <h1 class="hero__title">We carefully select greatest coffees around the world</h1>
                     </div>
-                    <div class="img__container col-5">
+                    <div class="d-flex col-lg-5">
                         <img class="col-6" src="img/BODY.svg" alt="">
                         <img class="col-6" src="img/LEFT.svg" alt="">
                     </div>
@@ -58,10 +62,10 @@
     </main>
     <section id="products" class="products wrap">
         <div class="items__container mx-auto">
-            <h2 class="transition text-center hidden">Know our products</h2>
+            <h2 class="products__title transition text-center hidden">Know our products</h2>
             <div class="product transition hidden">
-                <img class="col-4" src="img/product3.svg" alt="">
-                <div class="col-4 px-5">
+                <img class="col-6 col-lg-4" src="img/product3.svg" alt="">
+                <div class="col-6 col-lg-4 px-5">
                     <h3 class="products__subtitle">Lavazza</h3>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde, labore
                         nostrum. Nesciunt corporis ut quas recusandae exercitationem, hic distinctio ea molestiae
@@ -69,17 +73,17 @@
                 </div>
             </div>
             <div class="product justify-content-end transition hidden">
-                <div class="col-4 px-5">
+                <div class="col-6 col-lg-4 px-5">
                     <h3 class="products__subtitle">Atlas premium</h3>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde, labore
                         nostrum. Nesciunt corporis ut quas recusandae exercitationem, hic distinctio ea molestiae
                         voluptatum quidem facere non qui optio dolore, earum modi!</p>
                 </div>
-                <img class="col-4" src="img/product1.svg" alt="">
+                <img class="col-6 col-lg-4" src="img/product1.svg" alt="">
             </div>
             <div class="product transition hidden">
-                <img class="col-4" src="img/product2.svg" alt="">
-                <div class="col-4 px-5">
+                <img class="col-6 col-lg-4" src="img/product2.svg" alt="">
+                <div class="col-6 col-lg-4 px-5">
                     <h3 class="products__subtitle">Arabia classic</h3>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde, labore
                         nostrum. Nesciunt corporis ut quas recusandae exercitationem, hic distinctio ea molestiae
@@ -89,15 +93,15 @@
         </div>
     </section>
     <section id="about" class="about hidden transition wrap">
-        <div class="p-0 margin-auto">
+        <div class="p-0">
             <div class="w-80 mx-auto">
-                <h1 class="about__title col-6">47 years giving
+                <h1 class="about__title col-12 col-lg-6">47 years giving
                     high quality coffee</h1>
             </div>
-            <div class="w-80 mx-auto py-5">
+            <div class="col-12 col-lg-10 mx-auto py-5">
                 <img class="banner" src="img/banner.png" alt="">
             </div>
-            <p class="about__description mx-auto text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            <p class="about__description text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Etiam eu
                 turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem
                 sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet. Lorem
@@ -117,7 +121,7 @@
             <li><i class="bi bi-twitter"></i></li>
         </ul>
         <div>
-            <form class="col-sm-6 mx-auto py-5" id="form">
+            <form class="col-10 col-sm-6 mx-auto py-5" id="form">
                 <div class="mb-3">
                     <label class="form-label" for="name">Full name: </label>
                     <input class="form-control form-control-lg" type="text" id="name" name="name">
@@ -135,14 +139,14 @@
         </div>
     </section>
     <footer class="site__footer">
-        <div class="footer__content w-80 mx-auto">
-            <div class="left">
+        <div class="footer__content w-80">
+            <div class="col-12 col-lg-4">
                 <img class="logo" src="img/CoffeeShop.svg">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto porro ab pariatur
                     voluptate tempora exercitationem, rerum sed natus doloribus nemo repellat, odit animi odio earum
                     veritatis similique sequi alias sunt!</p>
             </div>
-            <div class="footer__link">
+            <div class="col-12 col-lg-4 footer__link">
                 <a href="#">Home</a>
                 <a href="#products">Products</a>
                 <a href="#about">About us</a>
