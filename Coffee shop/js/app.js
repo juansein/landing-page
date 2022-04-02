@@ -27,8 +27,8 @@ buttons.forEach(button => {
     })
 })
 
-function isVisible(element) {
-    let elementBox = element.getBoundingClientRect()
+function isVisible(e) {
+    let elementBox = e.getBoundingClientRect()
     let distanceFromTop = -150
 
     if (elementBox.top - window.innerHeight < distanceFromTop) {
@@ -49,5 +49,5 @@ function scanDocument() {
 
 }
 
-
+window.addEventListener("load", scanDocument)
 document.addEventListener("scroll", scanDocument)
