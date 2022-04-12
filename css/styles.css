@@ -220,7 +220,7 @@ a:hover{
   object-fit: cover;
 }
 .site__footer {
-  background-image: url("/img/food.png");
+  background-image: url("../img/food.png");
 }
 .footer__content {
   padding: 5rem 0;
